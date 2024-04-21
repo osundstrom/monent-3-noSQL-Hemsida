@@ -2,7 +2,7 @@
 
 //------------------------------GET allt (FETCH)---------------------------------//
 
-let url = "http://localhost:3000/workexperiences"; //skapare url
+let url = "https://moment-3-nosql.onrender.com/workexperiences"; //skapare url
 
 
 //let url = "localhost:3000/workexperiences"
