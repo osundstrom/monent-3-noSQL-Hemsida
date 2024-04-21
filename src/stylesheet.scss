@@ -97,44 +97,79 @@ body{
 
 
 #allCompanys {
-    display: block;
-    //margin: 0 auto;
-    width: fit-content;
+    width: 40vw;
     position: relative;
-    display: block;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     
     li{
         list-style: none;
+        min-width: fit-content;
         padding: 0.5%;
         text-align: left;
         //border-bottom: 1px solid;
         font-weight: 600;
         display: block;
         border-bottom: 1px solid grey;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
         color: rgb(255, 255, 255);
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
     }
     ul{
         //border: 1px solid black;
         //border-radius: 10px;
-        min-width: 10vw;
-        padding: 1%;
-        display: block;
+        width: 18vw;
+        min-width: fit-content;
+        padding: 2%;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        
+        border: 4px double white;
+        display: block;
+        margin-right: 2vw;
     }
     button:hover{
-        background-color: rgb(238, 68, 68);
+        background-color: lightcoral;
         text-decoration: underline;
     }
     button{
         margin-top: 1vh;
         margin-bottom: 1vh;
-        background-color: lightcoral;
+        background-color: aliceblue;
         width: fit-content;
+        font-weight: 600;
+    }
+
+    @media (max-width: 1024px) {
+        min-width: fit-content;
+        width: fit-content;
+        position: relative;
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+        
+        li{
+            list-style: none;
+            min-width: fit-content;
+            padding: 0.5%;
+            text-align: left;
+            //border-bottom: 1px solid;
+            font-weight: 600;
+            display: block;
+            border-bottom: 1px solid grey;
+            color: rgb(255, 255, 255);
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+        }
+        ul{
+            //border: 1px solid black;
+            //border-radius: 10px;
+            width: 60vw;
+            padding: 2%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            border: 4px double white;
+            display: block;
+            margin-right: 2vw;
+        }
     }
    
 }

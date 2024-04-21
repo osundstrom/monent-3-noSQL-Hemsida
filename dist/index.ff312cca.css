@@ -73,18 +73,19 @@ body {
 }
 
 #allCompanys {
-  width: fit-content;
-  display: block;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
+  width: 40vw;
+  display: grid;
   position: relative;
 }
 
 #allCompanys li {
   text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   color: #fff;
   text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
   border-bottom: 1px solid gray;
+  min-width: fit-content;
   padding: .5%;
   font-weight: 600;
   list-style: none;
@@ -94,21 +95,58 @@ body {
 #allCompanys ul {
   word-wrap: break-word;
   overflow-wrap: break-word;
-  min-width: 10vw;
-  padding: 1%;
+  border: 4px double #fff;
+  width: 18vw;
+  min-width: fit-content;
+  margin-right: 2vw;
+  padding: 2%;
   display: block;
 }
 
 #allCompanys button:hover {
-  background-color: #e44;
+  background-color: #f08080;
   text-decoration: underline;
 }
 
 #allCompanys button {
-  background-color: #f08080;
+  background-color: #f0f8ff;
   width: fit-content;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  font-weight: 600;
+}
+
+@media (width <= 1024px) {
+  #allCompanys {
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(1, 1fr);
+    width: fit-content;
+    min-width: fit-content;
+    display: grid;
+    position: relative;
+  }
+
+  #allCompanys li {
+    text-align: left;
+    color: #fff;
+    text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+    border-bottom: 1px solid gray;
+    min-width: fit-content;
+    padding: .5%;
+    font-weight: 600;
+    list-style: none;
+    display: block;
+  }
+
+  #allCompanys ul {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    border: 4px double #fff;
+    width: 60vw;
+    margin-right: 2vw;
+    padding: 2%;
+    display: block;
+  }
 }
 
 #divForm {
