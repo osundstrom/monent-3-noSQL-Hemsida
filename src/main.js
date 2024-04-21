@@ -33,14 +33,14 @@ async function getAll() {
         console.log(company)
         const companyUL = document.createElement("ul");//skapar ul
         
-        
+        /*
         const idLI = document.createElement("li"); //Skapar li
         idLI.textContent = "ID: " + company._id;
         console.log(company._id)
         companyUL.appendChild(idLI); //lägger till i UL
-        
+        */
         const companynameLI = document.createElement("li"); //Skapar li
-        companynameLI.textContent = "Företags namn: " + company.companyname; //sätter texten
+        companynameLI.textContent = "Företag: " + company.companyname; //sätter texten
         companyUL.appendChild(companynameLI); //lägger till i UL
         
         const jobtitleLi = document.createElement("li"); //Skapar li

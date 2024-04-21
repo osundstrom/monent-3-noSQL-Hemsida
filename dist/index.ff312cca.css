@@ -1,20 +1,25 @@
 body {
-  background-color: #f0f8ff;
+  background-color: #f3c74d;
   width: 100vw;
   overflow-x: hidden;
 }
 
 #navigation {
-  justify-content: center;
-  margin-top: 5vh;
-  margin-left: 0;
+  text-align: center;
+  background-color: #302f2f;
+  border: 1px solid #000;
+  min-width: 106vw;
+  height: 8vh;
+  margin: -2vh auto 0 -3vw;
+  padding-top: 2%;
+  padding-bottom: 1%;
   position: relative;
 }
 
 #navigation li {
-  flex-direction: row;
   width: fit-content;
-  margin-right: 2vw;
+  margin: 1vh auto auto;
+  font-size: 100%;
   list-style: none;
   display: inline-block;
   position: relative;
@@ -25,11 +30,13 @@ body {
   color: #000;
   text-indent: none;
   white-space: nowrap;
-  background-color: #fff;
+  background-color: #f3c74d;
   border: 2px solid #000;
   border-radius: 10px;
+  margin-right: 4vw;
   padding: 8%;
-  font-weight: 700;
+  font-size: 100%;
+  font-weight: 900;
   text-decoration: none;
 }
 
@@ -38,58 +45,76 @@ body {
   text-decoration: underline;
 }
 
+@media (width <= 600px) {
+  #navigation ul {
+    margin-left: -5vw;
+    margin-right: 7vw;
+  }
+}
+
 #companyContainer {
-  background-color: #f3f3bf;
-  border: 1px solid #000;
+  background-color: #302f2f;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #8b8b8b;
   border-radius: 20px;
-  width: 44vw;
+  width: fit-content;
   height: fit-content;
   margin: 5vh auto auto;
-  padding-top: .5%;
-  padding-bottom: .5%;
+  padding: .5% 4%;
   position: relative;
 }
 
 #companyContainer h1 {
-  text-align: center;
-  color: #000;
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  font-size: 150%;
   text-decoration: underline;
 }
 
 #allCompanys {
-  width: 40vw;
-  margin: auto;
+  width: fit-content;
   display: block;
   position: relative;
 }
 
 #allCompanys li {
   text-align: left;
-  border-bottom: 1px solid;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  border-bottom: 1px solid gray;
   padding: .5%;
+  font-weight: 600;
   list-style: none;
+  display: block;
 }
 
 #allCompanys ul {
-  background-color: #f0f8ff;
-  border: 1px solid #000;
-  border-radius: 10px;
-  width: 40vw;
-  padding: .5%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-width: 10vw;
+  padding: 1%;
+  display: block;
 }
 
 #allCompanys button:hover {
-  background-color: #f08080;
+  background-color: #e44;
+  text-decoration: underline;
 }
 
 #allCompanys button {
+  background-color: #f08080;
+  width: fit-content;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  margin-left: 1vw;
 }
 
 #divForm {
-  background-color: #f3f3bf;
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  background-color: #302f2f;
   border: 1px solid #000;
   border-radius: 10px;
   width: fit-content;
@@ -107,6 +132,7 @@ body {
 
 #divForm input {
   height: 4vh;
+  font-weight: 600;
 }
 
 #divForm label {
@@ -124,6 +150,11 @@ body {
   text-decoration: underline;
 }
 
+#divForm button:hover {
+  background-color: #90ee90;
+  text-decoration: underline;
+}
+
 #messageErr {
   background-color: #f08080;
   border: 1px solid #000;
@@ -131,14 +162,18 @@ body {
   width: fit-content;
   height: fit-content;
   padding: 1%;
+  font-size: 140%;
+  font-weight: 900;
   display: none;
   position: relative;
 }
 
 #aboutPage {
   text-align: left;
-  background-color: #f3f3bf;
-  border: 1px solid;
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  background-color: #302f2f;
+  border: 1px solid #000;
   border-radius: 10px;
   width: fit-content;
   margin: 5vh auto auto;

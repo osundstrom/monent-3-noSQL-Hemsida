@@ -1,6 +1,6 @@
 "use strict";
 //------------------------------GET allt (FETCH)---------------------------------//
-let url = "http://localhost:3000/workexperiences"; //skapare url
+let url = "https://moment-3-nosql.onrender.com/workexperiences"; //skapare url
 //let url = "localhost:3000/workexperiences"
 document.addEventListener("DOMContentLoaded", function() {
     console.log("k\xf6rs get all");
@@ -20,12 +20,13 @@ async function getAll() {
     data.forEach((company)=>{
         console.log(company);
         const companyUL = document.createElement("ul"); //skapar ul
+        /*
         const idLI = document.createElement("li"); //Skapar li
         idLI.textContent = "ID: " + company._id;
-        console.log(company._id);
+        console.log(company._id)
         companyUL.appendChild(idLI); //lägger till i UL
-        const companynameLI = document.createElement("li"); //Skapar li
-        companynameLI.textContent = "F\xf6retags namn: " + company.companyname; //sätter texten
+        */ const companynameLI = document.createElement("li"); //Skapar li
+        companynameLI.textContent = "F\xf6retag: " + company.companyname; //sätter texten
         companyUL.appendChild(companynameLI); //lägger till i UL
         const jobtitleLi = document.createElement("li"); //Skapar li
         jobtitleLi.textContent = "Roll: " + company.jobtitle;
