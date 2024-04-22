@@ -28,7 +28,6 @@ body {
 #navigation a {
   text-transform: none;
   color: #000;
-  text-indent: none;
   white-space: nowrap;
   background-color: #f0f8ff;
   border: 2px solid #000;
